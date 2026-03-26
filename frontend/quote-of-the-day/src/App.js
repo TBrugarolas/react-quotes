@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import QuoteButton from './components/QuoteButton';
+import QuoteDisplay from './components/QuoteDisplay';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-6">
+          <div className="card shadow-sm">
+            <div className="card-body">
+              <h1 className="text-center mb-4">Quote of the Day</h1>
+              <QuoteButton />
+              <QuoteDisplay />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
